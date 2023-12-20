@@ -12,7 +12,7 @@ const { NotImplementedError } = require('../extensions/index.js');
  * For 91, the result should be 1 (9 + 1 = 10, 1 + 0 = 1)
  *
  */
-function sumOfDigits(n) {
+function getSumOfDigits(n) {
 	let sum;
 	sum = n.toString().split('').map((i) => Number(i)).reduce((acc, val) => acc + val, 0);
 	while (sum > 9) {
@@ -20,6 +20,12 @@ function sumOfDigits(n) {
 		sum = arr.reduce((acc, val) => acc + val, 0);
 	}
 	return sum;
+	// if (n <= 9) { return n; }
+	// const str = String(n);
+	// const arr = str.split('');
+	// const arrNum = arr.map((item) => parseInt(item, 10));
+	// const sum = arrNum.reduce((acc, val) => acc + val, 0);
+	// return getDigitalRoot(sum);
 
 }
 
