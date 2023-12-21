@@ -20,12 +20,6 @@ function getSumOfDigits(n) {
 		sum = arr.reduce((acc, val) => acc + val, 0);
 	}
 	return sum;
-	// if (n <= 9) { return n; }
-	// const str = String(n);
-	// const arr = str.split('');
-	// const arrNum = arr.map((item) => parseInt(item, 10));
-	// const sum = arrNum.reduce((acc, val) => acc + val, 0);
-	// return getDigitalRoot(sum);
 
 }
 
